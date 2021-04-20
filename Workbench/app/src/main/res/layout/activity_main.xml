@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="Welcome!"
+        android:textAlignment="center"
+        android:textColor="@color/colorText"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Please Select a Function."
+        android:textAlignment="center"
+        android:textColor="@color/colorText"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/textView2"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/btnVoltmeter"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/bg_input"
+        android:onClick="onVoltmeter"
+        android:text="DC Voltmeter"
+        android:textColor="@color/colorText"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/btnOhmmeter"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bg_input"
+        android:onClick="onOhmmeter"
+        android:text="Ohmmeter"
+        android:textColor="@color/colorText"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/btnVoltmeter"
+        app:layout_constraintStart_toStartOf="@+id/btnVoltmeter"
+        app:layout_constraintTop_toBottomOf="@+id/btnVoltmeter" />
+
+    <Button
+        android:id="@+id/btnAmmeter"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bg_input"
+        android:onClick="onAmmeter"
+        android:text="DC Ammeter"
+        android:textColor="@color/colorText"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/btnOhmmeter"
+        app:layout_constraintStart_toStartOf="@+id/btnOhmmeter"
+        app:layout_constraintTop_toBottomOf="@+id/btnOhmmeter" />
+
+    <Button
+        android:id="@+id/btnFuncGen"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bg_input"
+        android:onClick="onFuncGen"
+        android:text="Function Generator"
+        android:textColor="@color/colorText"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/btnAmmeter"
+        app:layout_constraintStart_toStartOf="@+id/btnAmmeter"
+        app:layout_constraintTop_toBottomOf="@+id/btnAmmeter" />
+
+    <Button
+        android:id="@+id/btnOscilloscope"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bg_input"
+        android:onClick="onOscilloscope"
+        android:text="Oscilloscope"
+        android:textColor="@color/colorText"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/btnFuncGen"
+        app:layout_constraintStart_toStartOf="@+id/btnFuncGen"
+        app:layout_constraintTop_toBottomOf="@+id/btnFuncGen" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
