@@ -1,4 +1,8 @@
 # Portable EE Workbench
+
+![IIM Project - Top](https://user-images.githubusercontent.com/42911363/116903203-8811d600-ac55-11eb-8c65-eaaf02019ce1.jpg)
+
+
 This project attempts to design and implement a portable, basic EE workbench and contains the following features:
 <ul>
   <li>DC Voltmeter should have a range of 0 to 1000V.
